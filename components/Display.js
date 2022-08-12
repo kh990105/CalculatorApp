@@ -4,6 +4,9 @@ import Icon from 'react-native-vector-icons/Entypo'
 import  Icon1  from 'react-native-vector-icons/MaterialCommunityIcons'
 
 const Display = () => {
+  const [mode, setMode] = useState(true);
+  const change = () => setMode(!mode);  
+
   return (
     <View style={mode? light.container:dark.container}>        
         <View style={light.displayContainer}>
