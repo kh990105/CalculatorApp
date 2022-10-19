@@ -4,14 +4,14 @@ import Icon from 'react-native-vector-icons/Entypo'
 import  Icon1  from 'react-native-vector-icons/MaterialCommunityIcons'
 
 const Display = () => {
-  const [mode, setMode] = useState(true);
-  const change = () => setMode(!mode);  
+  const [Darkmode, setMode] = useState(true);
+  const change = () => setMode(!Darkmode);  
 
   return (
-    <View style={mode? light.container:dark.container}>        
+    <View style={Darkmode? light.container:dark.container}>        
         <View style={light.displayContainer}>
             <Pressable onPress={change}>
-                <Icon1 name={ mode?"toggle-switch-outline":"toggle-switch-off-outline"} size={60} color={mode? 'black':'white'}/>
+                <Icon1 name={ Darkmode?"toggle-switch-outline":"toggle-switch-off-outline"} size={60} color={Darkmode? 'black':'white'}/>
             </Pressable>
             <View style={light.TextBox}>
                 <Text style={light.firstText}>1,345.0</Text>
@@ -36,13 +36,13 @@ const Display = () => {
                 </TouchableOpacity>
             </View>
             <View style={light.rowContainer}>
-                <TouchableOpacity style={mode? light.whiteBtn: dark.DarkBtn}>
+                <TouchableOpacity style={Darkmode? light.whiteBtn: dark.DarkBtn}>
                     <Text style={light.blackText}>7</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={mode? light.whiteBtn: dark.DarkBtn}>
+                <TouchableOpacity style={Darkmode? light.whiteBtn: dark.DarkBtn}>
                     <Text style={light.blackText}>8</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={mode? light.whiteBtn: dark.DarkBtn}>
+                <TouchableOpacity style={Darkmode? light.whiteBtn: dark.DarkBtn}>
                     <Text style={light.blackText}>9</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={light.blueBtn}>
@@ -50,13 +50,13 @@ const Display = () => {
                 </TouchableOpacity>
             </View>
             <View style={light.rowContainer}>
-            <TouchableOpacity style={mode? light.whiteBtn: dark.DarkBtn}>
+            <TouchableOpacity style={Darkmode? light.whiteBtn: dark.DarkBtn}>
                     <Text style={light.blackText}>4</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={mode? light.whiteBtn: dark.DarkBtn}>
+                <TouchableOpacity style={Darkmode? light.whiteBtn: dark.DarkBtn}>
                     <Text style={light.blackText}>5</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={mode? light.whiteBtn: dark.DarkBtn}>
+                <TouchableOpacity style={Darkmode? light.whiteBtn: dark.DarkBtn}>
                     <Text style={light.blackText}>6</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={light.blueBtn}>
@@ -64,13 +64,13 @@ const Display = () => {
                 </TouchableOpacity>
             </View>
             <View style={light.rowContainer}>
-            <TouchableOpacity style={mode? light.whiteBtn: dark.DarkBtn}>
+            <TouchableOpacity style={Darkmode? light.whiteBtn: dark.DarkBtn}>
                     <Text style={light.blackText}>1</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={mode? light.whiteBtn: dark.DarkBtn}>
+                <TouchableOpacity style={Darkmode? light.whiteBtn: dark.DarkBtn}>
                     <Text style={light.blackText}>2</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={mode? light.whiteBtn: dark.DarkBtn}>
+                <TouchableOpacity style={Darkmode? light.whiteBtn: dark.DarkBtn}>
                     <Text style={light.blackText}>3</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={light.blueBtn}>
@@ -78,13 +78,13 @@ const Display = () => {
                 </TouchableOpacity>
             </View>
             <View style={light.rowContainer}>
-            <TouchableOpacity style={mode? light.whiteBtn: dark.DarkBtn}>
+            <TouchableOpacity style={Darkmode? light.whiteBtn: dark.DarkBtn}>
                     <Text style={light.blackText}>.</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={mode? light.whiteBtn: dark.DarkBtn}>
+                <TouchableOpacity style={Darkmode? light.whiteBtn: dark.DarkBtn}>
                     <Text style={light.blackText}>0</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={mode? light.whiteBtn: dark.DarkBtn}>
+                <TouchableOpacity style={Darkmode? light.whiteBtn: dark.DarkBtn}>
                     <Icon name="erase" size={30} color="#888"/>
                 </TouchableOpacity>
                 <TouchableOpacity style={light.blueBtn}>
